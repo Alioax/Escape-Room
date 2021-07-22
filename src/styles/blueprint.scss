@@ -48,5 +48,20 @@
   font-weight: 500;
 }
 
+
+//Body Background
+$body-bg:#8C3573;
+
+
+//Font Weights
+$font-weight-lighter: 100 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 500 !default;
+$font-weight-bolder: 900 !default;
+
+
+
+
 @import "~bootstrap/scss/bootstrap";
 @import "main";
