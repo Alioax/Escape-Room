@@ -18,3 +18,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.z-index-n1 {
+  z-index: -1;
+}
+
+.form-control-self {
+  border: 2px solid #8c3573;
+
+  &:focus {
+    border-color: #8c3573;
+    border-style: solid !important;
+    box-shadow: 0 0 0 0.1rem #8c3573;
+  }
+}

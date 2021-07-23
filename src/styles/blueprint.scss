@@ -48,10 +48,11 @@
   font-weight: 500;
 }
 
+//Fundumentals
+$enable-reduced-motion: false !default;
 
 //Body Background
-// $body-bg:#8C3573;
-
+$body-bg:#000000;
 
 //Font Weights
 $font-weight-lighter: 100 !default;
@@ -60,8 +61,10 @@ $font-weight-normal: 400 !default;
 $font-weight-bold: 500 !default;
 $font-weight-bolder: 900 !default;
 
-
-
+//grid
+$grid-columns: 12 !default;
+$grid-gutter-width: 2rem !default;
+$grid-row-columns: 6 !default;
 
 @import "~bootstrap/scss/bootstrap";
 @import "main";
