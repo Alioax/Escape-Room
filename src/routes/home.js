@@ -20,11 +20,11 @@ const Home = () => {
   const isWinner = key === "548231";
 
   return (
-    <div className="container">
-      <div className="position-fixed z-index-n1 d-flex end-0 top-0 justify-content-center vh-100 vw-100">
+    <div className="container my-3">
+      <div className="position-fixed z-index-n1 d-flex end-0 top-0 justify-content-center">
         <img src={bg_image} alt="scary door" />
       </div>
-      <div className="row justify-content-center align-items-center min-vh-100">
+      <div className="row justify-content-center align-items-center">
         <div className="row mb-3 gx-3 align-items-center">
           <div class="col col-md-auto">
             <img className="img-fluid" src={puzzle1_1} alt="Logo" />
@@ -55,7 +55,7 @@ const Home = () => {
                 (isLocked ? " disabled" : " btn-danger") +
                 " btn w-100 btn-secondary"
               }
-              to={isWinner? "/free" : "/lost"}
+              to={isWinner ? "/free" : "/lost"}
             >
               {isLocked ? <BsLockFill /> : <BsUnlockFill />}
             </Link>
