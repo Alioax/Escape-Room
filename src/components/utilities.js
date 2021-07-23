@@ -6,7 +6,7 @@ import "../styles/blueprint.scss";
 const Utilities = ({ children }) => {
   return (
     <Breakpoint>
-      <main class="vw-100">{children}</main>
+      <main>{children}</main>
       <Helmet>
         <title>قمار باز</title>
         <meta property="og:description" content="پایان قمار باز" />
