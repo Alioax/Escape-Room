@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { Link, Redirect } from "react-router-dom";
+import { Link, Redirect, withRouter } from "react-router-dom";
+import useSound from "use-sound";
+import { PlayButton } from "use-sound";
 
 import { BsLockFill, BsUnlockFill } from "react-icons/bs";
 import { RiKeyFill } from "react-icons/ri";
@@ -16,10 +18,13 @@ import puzzle2_2 from "../assets/images/p2/p2_2.png";
 import puzzle2_3 from "../assets/images/p2/p2_3.png";
 import puzzle2_4 from "../assets/images/p2/p2_4.png";
 
+import intro_audio from "../assets/audio/intro.mp3";
+
 const Home = () => {
   const [key, setKey] = useState("");
   const isLocked = !(key === "ACTS" || key === "548231");
   const isWinner = key === "548231";
+  const [play, { stop, isPlaying }] = useSound(intro_audio);
 
   return (
     <>
@@ -27,7 +32,16 @@ const Home = () => {
         <div className="position-fixed vw-100 vh-100 z-index-n1 d-flex end-0 top-0 justify-content-center">
           <img src={bg_image} alt="scary door" />
         </div>
+        
         <div className="row justify-content-center align-items-center">
+
+          <div className="row mb-3 justify-content-center">
+            <audio controls autoplay>
+              <source src={intro_audio} type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+
           <div className="row mb-3 gx-3 align-items-center">
             <div className="col col-md-auto">
               <img className="img-fluid" src={puzzle1_1} alt="Logo" />
@@ -98,4 +112,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default withRouter(Home);
