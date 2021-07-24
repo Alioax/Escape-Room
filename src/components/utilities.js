@@ -1,5 +1,6 @@
 import { BreakpointProvider as Breakpoint } from "react-socks";
 import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 
 import { Switch, Route, Link, useLocation } from "react-router-dom";
 import "../styles/blueprint.scss";
@@ -9,12 +10,13 @@ import Free from "../routes/free";
 import Lost from "../routes/lost";
 
 const Utilities = ({ children }) => {
+  const haveWon = localStorage.getItem("haveWon");
   return (
     <Breakpoint>
       <main>
         <Switch>
           <Route exact path="/">
-            <Home />
+            {haveWon === "0" ? <Lost /> : haveWon === "1" ? <Free /> : <Home />}
           </Route>
           <Route path="/lost">
             <Lost />
