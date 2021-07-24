@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { BsLockFill, BsUnlockFill } from "react-icons/bs";
 
-import bg_image from "../assets/images/bg.jpg";
+import bg_image from "../assets/images/bg-vertical.jpg";
 
 import puzzle1_1 from "../assets/images/p1/p1_1.png";
 import puzzle1_2 from "../assets/images/p1/p1_2.png";
@@ -16,12 +16,12 @@ import puzzle2_4 from "../assets/images/p2/p2_4.png";
 
 const Home = () => {
   const [key, setKey] = useState("");
-  const isLocked = !(key === "acts" || key === "548231");
+  const isLocked = !(key === "ACTS" || key === "548231");
   const isWinner = key === "548231";
 
   return (
     <div className="container my-3">
-      <div className="position-fixed z-index-n1 d-flex end-0 top-0 justify-content-center">
+      <div className="position-fixed vw-100 vh-100 z-index-n1 d-flex end-0 top-0 justify-content-center">
         <img src={bg_image} alt="scary door" />
       </div>
       <div className="row justify-content-center align-items-center">
@@ -46,7 +46,7 @@ const Home = () => {
               className="form-control-self form-control"
               type="text"
               value={key}
-              onChange={(e) => setKey(e.target.value)}
+              onChange={(e) => setKey(e.target.value.toUpperCase())}
             />
           </div>
           <div className="col">
