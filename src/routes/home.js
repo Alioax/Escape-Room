@@ -30,11 +30,10 @@ const Home = () => {
     <>
       <div className="container my-3">
         <div className="position-fixed vw-100 vh-100 z-index-n1 d-flex end-0 top-0 justify-content-center">
-          <img src={bg_image} alt="scary door" />
+          <img className="blur" src={bg_image} alt="scary door" />
         </div>
-        
-        <div className="row justify-content-center align-items-center">
 
+        <div className="row justify-content-center align-items-center">
           <div className="row mb-3 justify-content-center">
             <audio controls autoplay>
               <source src={intro_audio} type="audio/mpeg" />
