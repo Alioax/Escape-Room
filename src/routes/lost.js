@@ -10,7 +10,7 @@ import Background from "../components/background";
 const Lost = () => {
   return (
     <div className="min-vh-100 bg-transparent min-vw-100 flex-column d-flex align-items-center justify-content-center">
-      <Background src={lost_audio} alt={"tunnel"} />
+      <Background src={lost_image} alt={"tunnel"} />
       <Clear />
       <div className="col-12 mb-5 text-center">
         <span className="display-1 text-white fw-bolder">شما باختید!</span>
