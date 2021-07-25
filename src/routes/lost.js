@@ -12,7 +12,7 @@ const Lost = () => {
     <>
       <Background src={lost_image} alt={"tunnel"} />
       <Clear />
-      <div className="min-vh-100 vw-100 align-items-center row">
+      <div className="min-vh-100 align-items-center row">
         <div className="col-12 mb-5 text-center">
           <span className="display-1 text-danger fw-bolder">شما باختید!</span>
         </div>

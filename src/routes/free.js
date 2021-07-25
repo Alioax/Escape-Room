@@ -11,7 +11,7 @@ const Free = () => {
     <>
       <Background src={free_image} alt={"metro"} />
       <Clear />
-      <div className="min-vh-100 vw-100 align-items-center row">
+      <div className="min-vh-100 align-items-center row">
         <div className="col-12 mb-5 text-center">
           <span className="display-1 text-danger fw-bolder">شما بردید!</span>
         </div>
