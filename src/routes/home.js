@@ -19,6 +19,7 @@ import puzzle2_3 from "../assets/images/p2/p2_3.png";
 import puzzle2_4 from "../assets/images/p2/p2_4.png";
 
 import intro_audio from "../assets/audio/intro.mp3";
+import Background from "../components/background";
 
 const Home = () => {
   const [key, setKey] = useState("");
@@ -29,10 +30,7 @@ const Home = () => {
   return (
     <>
       <div className="container my-3">
-        <div className="position-fixed vw-100 vh-100 z-index-n1 d-flex end-0 top-0 justify-content-center">
-          <img className="blur" src={bg_image} alt="scary door" />
-        </div>
-
+        <Background src={bg_image} alt={"scary door"} />
         <div className="row justify-content-center align-items-center">
           <div className="row mb-3 justify-content-center">
             <audio controls autoplay>

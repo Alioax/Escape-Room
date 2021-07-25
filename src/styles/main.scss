@@ -63,6 +63,7 @@ input:focus + div {
 }
 
 .clear-button {
+  cursor: inherit !important;
   &:focus {
     box-shadow: none !important;
   }

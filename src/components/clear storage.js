@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useHistory } from "react-router";
 
 const Clear = () => {
   const [isClear_1, setClear_1] = useState(false);
@@ -10,9 +11,12 @@ const Clear = () => {
 
   const clear = isClear_1 && isClear_2 && isClear_3 && isClear_4;
 
+  let history = useHistory();
+
   useEffect(() => {
     if (clear) {
       localStorage.removeItem("haveWon");
+      history.push("/");
     }
   }, [clear]);
 
