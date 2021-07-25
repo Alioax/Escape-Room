@@ -8,7 +8,7 @@ import Clear from "../components/clear storage";
 import Background from "../components/background";
 const Free = () => {
   return (
-    <div className="min-vh-100 bg-transparent min-vw-100 flex-column d-flex align-items-center justify-content-center">
+    <div className="vh-100 bg-transparent vw-100 flex-column d-flex align-items-center justify-content-center">
       <Background src={free_image} alt={"metro"} />
       <Clear />
       <div className="col-12 mb-5 text-center">
