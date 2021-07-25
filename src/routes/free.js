@@ -13,7 +13,7 @@ const Free = () => {
       <Clear />
       <div className="min-vh-100 align-items-center row">
         <div className="col-12 mb-5 text-center">
-          <span className="display-1 text-danger fw-bolder">شما بردید!</span>
+          <span className="display-1 text-danger fw-bolder">شما فرار کردید!</span>
         </div>
         <div className="col-12 text-center">
           {/* <audio controls autoplay>
