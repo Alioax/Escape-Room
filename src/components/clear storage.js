@@ -17,6 +17,7 @@ const Clear = () => {
     if (clear) {
       localStorage.removeItem("haveWon");
       history.push("/");
+      history.go(0);
     }
   }, [clear]);
 
