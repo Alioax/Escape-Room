@@ -14,17 +14,25 @@ const Utilities = ({ children }) => {
   return (
     <Breakpoint>
       <main>
-        <Switch>
-          <Route exact path="/">
-            {haveWon === "0" ? <Lost /> : haveWon === "1" ? <Free /> : <Home />}
-          </Route>
-          <Route path="/lost">
-            <Lost />
-          </Route>
-          <Route path="/free">
-            <Free />
-          </Route>
-        </Switch>
+        <div className="container my-4">
+          <Switch>
+            <Route exact path="/">
+              {haveWon === "0" ? (
+                <Lost />
+              ) : haveWon === "1" ? (
+                <Free />
+              ) : (
+                <Home />
+              )}
+            </Route>
+            <Route path="/lost">
+              <Lost />
+            </Route>
+            <Route path="/free">
+              <Free />
+            </Route>
+          </Switch>
+        </div>
       </main>
       <Helmet>
         <title>قمار باز</title>

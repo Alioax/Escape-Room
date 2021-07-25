@@ -29,17 +29,17 @@ const Home = () => {
 
   return (
     <>
-      <div className="container my-3">
+
         <Background src={bg_image} alt={"scary door"} />
         <div className="row justify-content-center align-items-center">
-          <div className="row mb-3 justify-content-center">
+          <div className="row mb-4 justify-content-center">
             <audio controls autoplay>
               <source src={intro_audio} type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
           </div>
 
-          <div className="row mb-3 gx-3 align-items-center">
+          <div className="row mb-4 gx-3 align-items-center">
             <div className="col col-md-auto">
               <img className="img-fluid" src={puzzle1_1} alt="Logo" />
             </div>
@@ -54,7 +54,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="row gx-3 mb-3 w-100">
+          <div className="row gx-3 mb-4 w-100">
             <div className="col">
               <div className="input-group h-100 flex-row-reverse">
                 <input
@@ -104,7 +104,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+
     </>
   );
 };
