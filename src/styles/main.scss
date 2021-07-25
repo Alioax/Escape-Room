@@ -53,10 +53,6 @@ input:focus + div {
   border-bottom-left-radius: 0 !important;
 }
 
-.blur {
-  filter: blur(16px);
-}
-
 .w-h-64 {
   width: 64px;
   height: 64px;
@@ -70,4 +66,10 @@ input:focus + div {
   &:focus-visible {
     outline: none !important;
   }
+}
+
+.img-fluid-self {
+  min-width: 100%;
+  height: fit-content;
+  align-self: center;
 }
